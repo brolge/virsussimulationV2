@@ -1,49 +1,81 @@
 # Virus Spread Simulation
 
-A visual simulation of virus spread in a population, created using Python and Pygame.
+A Python-based simulation that visualizes how viruses spread through a population, with various configurable parameters and interactive features.
 
 ## Features
 
-- Visual representation of healthy (blue), infected (red), and dead (black) individuals
-- Real-time statistics display
-- Pause/Resume simulation with Space key
-- Reset simulation with R key
-- Configurable parameters (population size, infection radius, etc.)
+- **Multiple Map Sizes**
+  - Small (1920x1080)
+  - Medium (3840x2160)
+  - Large (5760x3240)
 
-## Requirements
+- **Interactive Controls**
+  - Camera zoom and pan
+  - Pause/Resume simulation
+  - Change map size during simulation
+  - Adjustable simulation parameters
 
-- Python 3.x
-- Pygame
-- NumPy
+- **Configurable Parameters**
+  - Population size (up to 1000)
+  - Initial infection percentage
+  - Infection radius
+  - Infection chance
+  - Death chance
+  - Recovery chance
+  - Recovery time
+  - Movement speed
 
-## Installation
-
-1. Make sure you have Python 3.x installed
-2. Run `start.bat` - it will automatically install the required packages
+- **Visual Elements**
+  - Buildings and streets
+  - Hospital and cemetery
+  - Color-coded population status
+  - Real-time statistics
 
 ## Controls
 
-- Space: Pause/Resume simulation
-- R: Reset simulation
-- Close window: Exit simulation
+- **Mouse Controls**
+  - Left-click and drag: Pan the map
+  - Scroll wheel: Zoom in/out
 
-## How It Works
+- **Keyboard Controls**
+  - Space: Pause/Resume simulation
+  - M: Change map size
+  - ESC: Exit simulation
 
-- Each dot represents a person
-- Blue dots are healthy
-- Red dots are infected
-- Black dots are dead
-- Infected people can spread the virus to healthy people within their infection radius
-- After a certain time, infected people either recover (turn blue) or die (turn black)
-- Statistics are displayed in the top-left corner
+## Installation and Running
 
-## Parameters
+1. Ensure you have Python installed on your system
+2. Install required dependencies:
+   ```
+   pip install pygame
+   ```
+3. Run the simulation:
+   - Double-click `start.bat` to launch the simulation
+   - Or run `python virus_simulator.py` from the command line
 
-You can modify these parameters in the code:
-- Population size
-- Infection radius
-- Infection chance
-- Death chance
-- Recovery time
-- Movement speed
-- Simulation FPS 
+## Credits and License
+
+This project is created and maintained by Brolge.
+
+You are free to use and modify this software for your own purposes, but please:
+- Do not claim credit for creating this software
+- Acknowledge the original creator (Brolge) if you share or modify the code
+- Respect the open-source nature of the project
+
+## Recent Updates
+
+- Added multiple map size options (Small, Medium, Large)
+- Implemented camera zoom and pan functionality
+- Increased maximum population size to 1000
+- Added map size selection screen at startup
+- Improved UI layout and statistics display
+- Added keyboard shortcuts for common actions
+- Fixed various bugs and improved performance
+
+## Technical Details
+
+- Built with Python and Pygame
+- Uses object-oriented programming principles
+- Implements efficient collision detection
+- Features smooth camera controls
+- Real-time simulation updates 
